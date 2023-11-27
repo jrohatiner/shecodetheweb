@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ILY-e</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.ico" type="image/x-icon" />  
+<link rel="apple-touch-icon" href="images/hello-icon-152.png">   
+<meta name="theme-color" content="white"/>  
+<meta name="apple-mobile-web-app-capable" content="yes">  
+<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+<meta name="apple-mobile-web-app-title" content="ILY-E"> 
+<meta name="msapplication-TileImage" content="images/hello-icon-144.png">  
+<meta name="msapplication-TileColor" content="#FFFFFF">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/4500d8ef13.js" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="main.js"></script>
+</head>
+<style> 
+dialog#addCard-bckgrd {
+   min-width: 50%;
+}
+</style>
+<body>
+  <div class="container">
+
+    <!--    <button type="hidden" id="show">SIGN-UP</button> -->
+    <dialog open id="addCard-bckgrd">
+      <title>Add Credit Card</title>
+      <div class="box2">
+         <p class="signText">PAYMENT
+            <i class="fa-solid fa-xmark" style="color: #ffffff;float:right;"></i>
+         </p>
+         <p class="signText">ADD CREDIT CARD
+
+         <div class="container progress">
+            <div class="addPayProgress payAdd">100%</div>
+         </div>
+         <p>Finished!</p>
+         </p>
+         <form>
+            <div class="row">
+               <div class="col-leftAdd">
+                  <input type="text-area" id="addCard1" name="addCard1" value="name on card"><br><br>
+                  <input type="text-area" id="addCard2" value="card number"><br><br>
+                  <input type="text-area" id="addCard3" name="addCard3" value="cvv">
+                  <input type="text-area" id="addCard4" value="exp date"><br><br>
+                  <input type="number" name="zip" pattern="[0-9]{5}" min="11111" max="99999" placeholder="Zip Code">
+               </div>
+            </div>
+         </form>
+         <div class="row addPay">
+            <p class="payS2">By continuing, I allow ILY-E to save my payment instrument information for future transactions pusrsuant to the Payment Terms for Services</p>
+            <button class="btn btn-primary" id="save" onClick="myTra()">SAVE</button><button id="saved" class="button2"></button>
+         </div>
+         <button id="close">Cancel</button>
+         <button id="next"><a href="/sign-up-checked.html">NEXT</button></a>
+      </div>
+   </dialog>
+ </div>
+ </div>
+ <script src="/js/progress.js"></script>
+  <script src="/js/save.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
