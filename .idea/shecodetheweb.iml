@@ -8,6 +8,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="4500d8ef13" level="application" />
+    <orderEntry type="library" name="@popperjs/core" level="application" />
   </component>
   <component name="SonarLintModuleSettings">
     <option name="uniqueId" value="3b5f70b9-a397-4a0f-b151-e7d150686492" />
